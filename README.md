@@ -11,6 +11,7 @@ Welcome to the **Grocery Store WebApp**! This web application allows users to br
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Reference](reference)
 
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap
@@ -54,3 +55,8 @@ To set up the Grocery Store WebApp on your local machine, follow these steps:
   2. Create a new branch for your feature or fix.
   3. Commit your changes.
   5. Push to your branch and open a pull request.
+## Reference
+   - [Stack Overflow](https://stackoverflow.com)
+   - [Python Documentation](https://docs.python.org/3/)
+   - [MySQL Documentation](https://dev.mysql.com/doc/)
+   - [GeeksforGeeks](https://www.geeksforgeeks.org/)
