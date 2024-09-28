@@ -1,0 +1,37 @@
+
+Common HTTP Request Methods:
+
+1. GET:
+   - Used to retrieve information from the server.
+   - Example: Fetching a web page or API response.
+
+2. POST:
+   - Used to send data to the server.
+   - Example: Submitting form data or uploading a file.
+
+3. PUT:
+   - Used to update or replace existing data on the server.
+   - Example: Updating a user's profile information.
+
+4. DELETE:
+   - Used to delete existing data from the server.
+   - Example: Removing a user's account.
+
+5. PATCH:
+   - Used to apply partial modifications to a resource.
+   - Example: Updating only the email field of a user profile.
+
+6. HEAD:
+   - Similar to GET, but without the response body.
+   - Example: Checking if a resource is available without downloading it.
+
+7. OPTIONS:
+   - Used to describe the communication options for the target resource.
+   - Example: Checking allowed HTTP methods for a resource.
+
+8. CONNECT:
+   - Establishes a tunnel to the server, typically used with proxies.
+
+9. TRACE:
+   - Performs a message loop-back test along the path to the target resource.
+
