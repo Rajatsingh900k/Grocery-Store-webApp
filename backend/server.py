@@ -6,7 +6,7 @@ import mysql.connector
 import json
 
 import products_dao
-# import orders_dao
+import orders_dao
 import uom_dao
 
 connection = get_sql_connection()
@@ -36,8 +36,25 @@ def insert_product():
     })
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
-@app.route('/deleteProduct', methods=['POST'])
 
+@app.route('/getAllOrders', methods=['GET'])
+def get_all_orders():
+    response = orders_dao.get_all_orders(connection)
+    response = jsonify(response)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@app.route('/insertOrder', methods=['POST'])
+def insert_order():
+    request_payload = json.loads(request.form['data'])
+    order_id = orders_dao.insert_order(connection, request_payload)
+    response = jsonify({
+        'order_id': order_id
+    })
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@app.route('/deleteProduct', methods=['POST'])
 def delete_product():
     return_id = products_dao.delete_product(connection, request.form['product_id'])
     response = jsonify({
